@@ -4,18 +4,6 @@ import java.util.NoSuchElementException;
 
 import week5.LinkedQueue.Node;
 
-/**
- * This is a skeleton file for your homework. Complete the functions below. You
- * may also edit the function "main" to test your code.
- * 
- * You should not use any loops or recursions. Your code needs to run in
- * constant time. It is OK if your testing code has loops (like in
- * checkInvariants).
- *
- * You must not add fields or static variables. As always, you must not change
- * the declaration of any method nor the name of the class or of this file.
- */
-
 public class Deque<T> {
 
 	private Node first; 	// A reference to the first item in the Dequeue (or
@@ -37,7 +25,7 @@ public class Deque<T> {
 	 * Construct an empty <code>Deque</code>.
 	 */
 	public Deque() {
-		// TODO - Repalce the line below with a correct solution.
+		// TODO
 		first = null;
 		last  = null;
         N = 0;
@@ -51,7 +39,7 @@ public class Deque<T> {
 	 *         otherwise.
 	 */
 	public boolean isEmpty() {
-		// TODO - Repalce the line below with a correct solution.
+		// TODO
 		return first == null;
 	}
 
@@ -61,7 +49,7 @@ public class Deque<T> {
 	 * @return the number of items currenlty in this <code>Deque</code>
 	 */
 	public int size() {
-		// TODO - Repalce the line below with a correct solution.
+		// TODO
 		return N;
 	}
 
@@ -71,7 +59,7 @@ public class Deque<T> {
 	 * @param item the item to be inserted
 	 */
 	public void pushFront(T item) {
-		// TODO - Repalce the line below with a correct solution.
+		// TODO
 		Node oldfirst = first;
         first = new Node();
         first.item = item;
@@ -93,7 +81,7 @@ public class Deque<T> {
 	 * @param item the item to be inserted
 	 */
 	public void pushBack(T item) {
-		// TODO - Repalce the line below with a correct solution.
+		// TODO
 		Node oldlast = last;
         last = new Node();
         last.item = item;
@@ -114,7 +102,7 @@ public class Deque<T> {
 	 * @throws NoSuchElementException if this <code>Deque</code> is empty.
 	 */
 	public T popFront() {
-		// TODO - Repalce the line below with a correct solution.
+		// TODO
 		if (isEmpty()) 
 			throw new NoSuchElementException();
         T item = first.item;
@@ -135,7 +123,7 @@ public class Deque<T> {
 	 * @throws NoSuchElementException if this <code>Deque</code> is empty.
 	 */
 	public T popBack() {
-		// TODO - Repalce the line below with a correct solution.
+		// TODO
 		 if (isEmpty()) 
 			throw new NoSuchElementException();
 		 T item = last.item;
